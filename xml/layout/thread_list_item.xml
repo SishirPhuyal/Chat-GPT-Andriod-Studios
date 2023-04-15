@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/black">
+
+        <RelativeLayout
+            android:id="@+id/chatGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/chatImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/chat_logo" />
+
+            <ImageView
+                android:id="@+id/deleteThread"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:paddingLeft="10dp"
+                android:visibility="invisible"
+                android:src="@drawable/delete_thread" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/chatGrid">
+
+            <TextView
+                android:id="@+id/pageTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Chat Content Topic"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>
+
